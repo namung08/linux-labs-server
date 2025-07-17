@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://172.16.219.183:3000")
 @RequiredArgsConstructor
 @RequestMapping("/api/v1")
 public class ApiController {
