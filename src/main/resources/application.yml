@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: ${postgres.url}
+    driver-class-name: org.postgresql.Driver
+    username: ${postgres.user}
+    password: ${postgres.pw}
   h2:
     console:
       enabled: true
